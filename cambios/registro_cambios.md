@@ -11,6 +11,8 @@
 - **Decisión:** Validada a través de una revisión académica simulada.
 - **Responsable:** Gabriel Ordoñez Garcia.
 
+- **Estado:** Completada y comprobada. La ejecución con S/ 50 × 3 unidades arrojó S/ 150 correctamente. La solución quedó registrada en el commit `9556c31` e integrada en `main`.
+
 ## CR-002 — Aplicación de descuento según subtotal
 
 - **Origen:** Requerimiento emitido por el departamento comercial.
