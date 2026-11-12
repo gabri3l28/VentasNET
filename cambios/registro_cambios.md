@@ -26,6 +26,8 @@
 - **Decisión:** Validada a través de una revisión académica simulada.
 - **Responsable:** Gabriel Ordoñez Garcia.
 
+- **Estado:** Completada y comprobada. Las ejecuciones con subtotales de S/ 150, S/ 200 y S/ 300 arrojaron montos finales de S/ 150, S/ 180.0 y S/ 270.0, respectivamente. La modificación quedó guardada en el commit `81043da` e integrada en `main`.
+
 ## Matriz de impacto
 
 | Criterio | INC-001 | CR-002 |
@@ -35,3 +37,10 @@
 | Riesgo | Facturar únicamente el valor individual a pesar de adquirir múltiples artículos. | Fallar en el cálculo de la rebaja al evaluar el límite exacto de S/ 200 o aplicarla incorrectamente. |
 | Prueba prevista | S/ 50 × 3 unidades debe arrojar S/ 150. | Con S/ 150 se mantiene en S/ 150, con S/ 200 desciende a S/ 180 y con S/ 300 baja a S/ 270. |
 | Decisión simulada | Aprobada para enmendar un fallo crítico en la facturación. | Aprobada para incorporar la oferta requerida por el equipo comercial. |
+
+## Tabla de trazabilidad
+
+| ID de cambio | Rama | Commit de implementación | Prueba aprobada | Versión de entrega |
+| --- | --- | --- | --- | --- |
+| INC-001 | `fix/INC-001-total` | `9556c31` | S/ 50 × 3 unidades = S/ 150. | `v1.1.0` |
+| CR-002 | `feature/CR-002-descuento` | `81043da` | Subtotal → total: S/ 150 → S/ 150, S/ 200 → S/ 180 y S/ 300 → S/ 270. | `v1.1.0` |
